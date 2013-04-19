@@ -61,22 +61,22 @@ void limpa_imagem(char magic_number[128], int n, int m, int max, int matriz[MAX]
 	// CONTADORES
 	int i, j, k;
 
-		for (i = 1; i < n - 1; i++) {
-			for (j = 1; j < m - 1; j++) {
-				vizinhos[0] = matriz[i - 1][j - 1];
-				vizinhos[1] = matriz[i - 1][j];
-				vizinhos[2] = matriz[i - 1][j + 1];
-				vizinhos[3] = matriz[i][j - 1];
-				vizinhos[4] = matriz[i][j];
-				vizinhos[5] = matriz[i][j + 1];
-				vizinhos[6] = matriz[i + 1][j - 1];
-				vizinhos[7] = matriz[i + 1][j];
-				vizinhos[8] = matriz[i + 1][j + 1];
+	for (i = 1; i < n - 1; i++) {
+		for (j = 1; j < m - 1; j++) {
+			vizinhos[0] = matriz[i - 1][j - 1];
+			vizinhos[1] = matriz[i - 1][j];
+			vizinhos[2] = matriz[i - 1][j + 1];
+			vizinhos[3] = matriz[i][j - 1];
+			vizinhos[4] = matriz[i][j];
+			vizinhos[5] = matriz[i][j + 1];
+			vizinhos[6] = matriz[i + 1][j - 1];
+			vizinhos[7] = matriz[i + 1][j];
+			vizinhos[8] = matriz[i + 1][j + 1];
 
-				matriz[i][j] = mediana(vizinhos);
-				//printf("%d\n", matriz[i][j]);
-			}
+			matriz[i][j] = mediana(vizinhos);
+			//printf("%d\n", matriz[i][j]);
 		}
+	}
 
 	grava_nova(magic_number, n, m, max, matriz);
 }
@@ -92,6 +92,10 @@ int mediana(int org[]) {
 			org[i + 1] = aux;
 		}
 	}
+
+	// CHECA SE A MEDIANA É 0 OU 255,
+	// SE FOR MOVE A POSIÇÃO DA MEDIANA
+	// EM P&B MOSTRA-SE EFETIVO
 	printf("Mediana: %d\n", org[4]);
 	if(org[4] == 0){
 		return org[3];
@@ -99,17 +103,12 @@ int mediana(int org[]) {
 		return org[5];
 	}
 
-
-	//printf("[0]: %d | [1]: %d | [2]: %d | [3]: %d | [4]: %d | [5]: %d | [6]: %d | [7]: %d | [8]: %d\n",
-	//		org[0], org[1], org[2], org[3], org[4], org[5], org[6], org[7], org[8]);
-
 	return (org[4]);
 }
 
 // GRAVA A NOVA IMAGEM LIMPA
 void grava_nova(char magic_number[128], int n, int m, int max,
 		int matriz[MAX][MAX]) {
-	//printf("%s, %d, %d, %d", magic_number, n, m, max);
 
 	int i, j;
 
