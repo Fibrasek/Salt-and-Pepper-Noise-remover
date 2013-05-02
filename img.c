@@ -63,7 +63,7 @@ void limpa_imagem(char magic_number[128], int n, int m, int max, int matriz[MAX]
 
 		for (i = 1; i < n - 1; i++) {
 			for (j = 1; j < m - 1; j++) {
-				vizinhos[0] = matriz[i - 1][j - 1];
+/*				vizinhos[0] = matriz[i - 1][j - 1];
 				vizinhos[1] = matriz[i - 1][j];
 				vizinhos[2] = matriz[i - 1][j + 1];
 				vizinhos[3] = matriz[i][j - 1];
@@ -71,10 +71,17 @@ void limpa_imagem(char magic_number[128], int n, int m, int max, int matriz[MAX]
 				vizinhos[5] = matriz[i][j + 1];
 				vizinhos[6] = matriz[i + 1][j - 1];
 				vizinhos[7] = matriz[i + 1][j];
-				vizinhos[8] = matriz[i + 1][j + 1];
+				vizinhos[8] = matriz[i + 1][j + 1];*/
+
+				int ii,jj,k;
+
+				for(ii = -1, k = 0;ii <= 1; ii++){
+                  for(jj = -1; jj <= 1; jj++, k++){
+                        vizinhos[k] = matriz[i+ii][j+jj];
+                   	}
+                }
 
 				matriz[i][j] = mediana(vizinhos);
-				//printf("%d\n", matriz[i][j]);
 			}
 		}
 
@@ -99,17 +106,11 @@ int mediana(int org[]) {
 		return org[5];
 	}
 
-
-	//printf("[0]: %d | [1]: %d | [2]: %d | [3]: %d | [4]: %d | [5]: %d | [6]: %d | [7]: %d | [8]: %d\n",
-	//		org[0], org[1], org[2], org[3], org[4], org[5], org[6], org[7], org[8]);
-
 	return (org[4]);
 }
 
 // GRAVA A NOVA IMAGEM LIMPA
-void grava_nova(char magic_number[128], int n, int m, int max,
-		int matriz[MAX][MAX]) {
-	//printf("%s, %d, %d, %d", magic_number, n, m, max);
+void grava_nova(char magic_number[128], int n, int m, int max, int matriz[MAX][MAX]) {
 
 	int i, j;
 
@@ -130,4 +131,3 @@ void grava_nova(char magic_number[128], int n, int m, int max,
 
 	fclose(new_arq);
 }
-
