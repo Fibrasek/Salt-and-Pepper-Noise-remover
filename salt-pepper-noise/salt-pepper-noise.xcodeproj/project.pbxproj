@@ -1,0 +1,254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD65F62C1B0D139900C4563F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FD65F62B1B0D139900C4563F /* main.c */; };
+		FD65F6391B0D17C600C4563F /* img.c in Sources */ = {isa = PBXBuildFile; fileRef = FD65F6381B0D17C600C4563F /* img.c */; };
+		FD65F63C1B0D1C3200C4563F /* quick.c in Sources */ = {isa = PBXBuildFile; fileRef = FD65F63B1B0D1C3200C4563F /* quick.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD65F6261B0D139900C4563F /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD65F6281B0D139900C4563F /* salt-pepper-noise */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "salt-pepper-noise"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD65F62B1B0D139900C4563F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FD65F6361B0D13F300C4563F /* img.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = img.h; sourceTree = "<group>"; };
+		FD65F6371B0D174700C4563F /* Lena.pgm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lena.pgm; sourceTree = "<group>"; };
+		FD65F6381B0D17C600C4563F /* img.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = img.c; sourceTree = "<group>"; };
+		FD65F63A1B0D1BFC00C4563F /* quick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick.h; sourceTree = "<group>"; };
+		FD65F63B1B0D1C3200C4563F /* quick.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quick.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD65F6251B0D139900C4563F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD65F61F1B0D139900C4563F = {
+			isa = PBXGroup;
+			children = (
+				FD65F62A1B0D139900C4563F /* salt-pepper-noise */,
+				FD65F6291B0D139900C4563F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD65F6291B0D139900C4563F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD65F6281B0D139900C4563F /* salt-pepper-noise */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD65F62A1B0D139900C4563F /* salt-pepper-noise */ = {
+			isa = PBXGroup;
+			children = (
+				FD65F6381B0D17C600C4563F /* img.c */,
+				FD65F6371B0D174700C4563F /* Lena.pgm */,
+				FD65F62B1B0D139900C4563F /* main.c */,
+				FD65F6361B0D13F300C4563F /* img.h */,
+				FD65F63A1B0D1BFC00C4563F /* quick.h */,
+				FD65F63B1B0D1C3200C4563F /* quick.c */,
+			);
+			path = "salt-pepper-noise";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD65F6271B0D139900C4563F /* salt-pepper-noise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD65F62F1B0D139900C4563F /* Build configuration list for PBXNativeTarget "salt-pepper-noise" */;
+			buildPhases = (
+				FD65F6241B0D139900C4563F /* Sources */,
+				FD65F6251B0D139900C4563F /* Frameworks */,
+				FD65F6261B0D139900C4563F /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "salt-pepper-noise";
+			productName = "salt-pepper-noise";
+			productReference = FD65F6281B0D139900C4563F /* salt-pepper-noise */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD65F6201B0D139900C4563F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Gabriel Bellon";
+				TargetAttributes = {
+					FD65F6271B0D139900C4563F = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = FD65F6231B0D139900C4563F /* Build configuration list for PBXProject "salt-pepper-noise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD65F61F1B0D139900C4563F;
+			productRefGroup = FD65F6291B0D139900C4563F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD65F6271B0D139900C4563F /* salt-pepper-noise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD65F6241B0D139900C4563F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD65F62C1B0D139900C4563F /* main.c in Sources */,
+				FD65F6391B0D17C600C4563F /* img.c in Sources */,
+				FD65F63C1B0D1C3200C4563F /* quick.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FD65F62D1B0D139900C4563F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FD65F62E1B0D139900C4563F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FD65F6301B0D139900C4563F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD65F6311B0D139900C4563F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD65F6231B0D139900C4563F /* Build configuration list for PBXProject "salt-pepper-noise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65F62D1B0D139900C4563F /* Debug */,
+				FD65F62E1B0D139900C4563F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD65F62F1B0D139900C4563F /* Build configuration list for PBXNativeTarget "salt-pepper-noise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65F6301B0D139900C4563F /* Debug */,
+				FD65F6311B0D139900C4563F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD65F6201B0D139900C4563F /* Project object */;
+}
