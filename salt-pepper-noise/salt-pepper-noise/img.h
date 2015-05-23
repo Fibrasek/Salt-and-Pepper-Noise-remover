@@ -14,13 +14,19 @@
 #define MAX_NAME 256
 #define MAX 512
 
-void limpa_imagem(char magic_number[128], int n, int m, int max, int matriz[MAX][MAX]);
+void limpa_imagem_bubble(char magic_number[128], int n, int m, int max, int matriz[MAX][MAX]);
 
-void limpa_imagem_recursive(char magic_number[128], int n, int m, int max, int matriz[MAX][MAX]);
+void limpa_imagem_quick(char magic_number[128], int n, int m, int max, int matriz[MAX][MAX]);
 
-void grava_nova(char magic_number[128], int n, int m, int max, int matriz[MAX][MAX]);
+void limpa_imagem_recursive_bubble(char magic_number[128], int n, int m, int max, int matriz[MAX][MAX]);
 
-int** encontra_vizinhos(int n, int m, int matriz[MAX][MAX]);
+void limpa_imagem_recursive_quick(char magic_number[128], int n, int m, int max, int matriz[MAX][MAX]);
+
+void grava_nova(char magic_number[128], int n, int m, int max, int matriz[MAX][MAX], char* nome);
+
+int** encontra_vizinhos_bubble(int n, int m, int matriz[MAX][MAX]);
+
+int** encontra_vizinhos_quick(int n, int m, int matriz[MAX][MAX]);
 
 int mediana_quick(int org[9]);
 
